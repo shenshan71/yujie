@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>九想观修行计时器 - 下载</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 60px;
+  }
+
+  /* 头像 */
+  .avatar-wrapper {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 24px;
+  }
+  .avatar-box {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 28px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+  }
+  .avatar-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* 标题 */
+  .header-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .app-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #4A4A4A;
+    margin-bottom: 8px;
+  }
+  .app-subtitle {
+    font-size: 16px;
+    color: #999;
+  }
+
+  /* 信息卡片 */
+  .data-section {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .data-item {
+    padding: 10px 18px;
+    background: #ffffff;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #666;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  /* 介绍 */
+  .intro-section {
+    max-width: 340px;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1.7;
+    font-size: 15px;
+    color: #666;
+  }
+
+  /* 下载按钮 */
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
+    padding: 18px 0;
+    background: linear-gradient(135deg, #84FAB0 0%, #8FD3F4 100%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 15px rgba(132,250,176,0.3);
+  }
+  .download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(132,250,176,0.4);
+  }
+  .download-btn:active {
+    transform: scale(0.98);
+  }
+
+  /* 四格截图 */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+    max-width: 380px;
+  }
+  .grid-box {
+    aspect-ratio: 9 / 16;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+  }
+  .grid-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="avatar-wrapper">
+    <div class="avatar-box">
+      <img src="https://icdn.binmt.cc/2602/69a1262cdeaac.png" alt="APP图标">
+    </div>
+  </div>
+
+  <div class="header-section">
+    <h1 class="app-title">欲界</h1>
+    <p class="app-subtitle">静心 · 轻松 · 实用 · 美好</p>
+  </div>
+
+  <div class="data-section">
+    <div class="data-item">版本 1.0</div>
+    <div class="data-item">大小 48.8</div>
+  </div>
+
+  <div class="intro-section">
+    专为修行者打造的清净工具，以九想观与不净观为核心，
+    提供计时、记录、提醒，助你轻松专注，日常好用。
+  </div>
+
+  <button class="download-btn">立即下载</button>
+
+  <div class="grid-container">
+    <div class="grid-box"><img src="https://icdn.binmt.cc/2602/69a121e87677c.png" alt="主界面"></div>
+    <div class="grid-box"><img src="https://icdn.binmt.cc/2602/69a11fc28f2a9.jpg" alt="观想页"></div>
+    <div class="grid-box"><img src="https://icdn.binmt.cc/2602/69a11fc17ecf2.jpg" alt="记录页"></div>
+    <div class="grid-box"><img src="https://icdn.binmt.cc/2602/69a11fc10bb79.jpg" alt="设置页"></div>
+  </div>
+
+</body>
+</html>
